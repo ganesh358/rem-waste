@@ -1,0 +1,157 @@
+.main {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.headerSection {
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #64748b;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+.navigationWrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.45s;
+    box-shadow: 0 -4px 6px rgba(255, 255, 255, 0.5);
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(5rem);
+    pointer-events: none;
+}
+
+.navigationButtons {
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
+    border-radius: 0.325rem 0.325rem 0 0;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem;
+    align-items: end;
+}
+
+.backBtn {
+    transform: rotate(180deg);
+}
+
+.footer {
+    padding: 0 1rem;
+}
+
+.contentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skipTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+}
+
+.period {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.priceContainer {
+    text-align: right;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.priceUnit {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #64748b;
+    width: 4rem;
+    margin-top: 0.125rem;
+}
+
+.continueWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sizeWrapper {
+    width: 100%;
+}
+
+.containerWithPadding {
+    padding-bottom: 12rem;
+}
+
+@media (min-width: 768px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .continueWrapper {
+        flex-direction: row;
+    }
+
+    .sizeWrapper {
+        width: 8rem;
+    }
+
+    .containerWithPadding {
+        padding-bottom: 7rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
