@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import classes from "./progressStepper.module.css";
+import classes from "./ProgressStepper.module.css";
 import checkIcon from "../../assets/checkmark.svg";
 
 const ProgressStepper = ({ steps }) => {
