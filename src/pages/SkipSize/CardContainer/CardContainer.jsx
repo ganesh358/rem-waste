@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { memo, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { getSkipSize } from "../../../api/SkipSizeService";
@@ -100,4 +100,4 @@ const CardContainer = () => {
   );
 };
 
-export default CardContainer;
+export default memo(CardContainer);

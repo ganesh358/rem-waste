@@ -1,12 +1,34 @@
-# React + Vite
+# WeWantWaste Skip Selection Page Redesign  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Project Overview  
+This project is a redesign of the **skip selection page** for [WeWantWaste](https://wewantwaste.co.uk/).  
+The goal was to improve the **UI/UX**, ensure **responsiveness**, and maintain **clean, maintainable React code** while keeping the core functionality intact.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 **Approach & Features**  
 
-## Expanding the ESLint configuration
+### ✅ **1. UI/UX Improvements**  
+- Implemented a **modern and clean UI** for better readability and user experience.  
+- Improved **layout structure** to enhance accessibility on both **desktop & mobile**.  
+- Added **hover effects and smooth transitions** for an interactive feel.  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ **2. Performance Optimization**  
+- **Lazy loading** used for components to improve initial page load time.  
+- **Memoization** (React.memo & useMemo) implemented where necessary to prevent unnecessary re-renders.  
+
+### ✅ **3. Responsive Design**  
+- Used **CSS Modules** for styling to ensure scoped styles.  
+- Utilized **flexbox & grid** for a **fluid and adaptable** layout.  
+- Implemented **mobile-first design** to enhance usability on smaller screens.  
+
+### ✅ **4. Data Handling**  
+- Fetched data from the provided API:  
+  [`https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft`](https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft)  
+- Used **React state management (useState & useEffect)** to handle API responses and update the UI dynamically.  
+
+### ✅ **5. Animations & Enhancements**  
+- Added **slight animations** for **better user engagement** using **CSS transitions**.  
+- Implemented **hover & click effects** for skip selections.  
+
+---
